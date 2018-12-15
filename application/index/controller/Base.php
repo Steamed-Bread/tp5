@@ -5,6 +5,10 @@ class Base extends Controller
 {
     public function _initialize()
     {
+        if(!session('username')){
+            $this->error('请先登录系统！','admin/Loginuser/index');
+            return;
+        }
     	$this->right();
     	$cateres=db('cate')->order('id asc')->select();
         $tagres=db('tags')->order('id desc')->select();
