@@ -4,9 +4,9 @@ use think\Model;
 class Article extends Model
 {
 
-	public function cate(){
-		return $this->belongsTo('cate','cateid');
-	}
+    public function cate(){
+        return $this->belongsTo('cate','cateid');
+    }
 
 
 
