@@ -13,7 +13,7 @@
 
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
-define('SITE_URL', 'http://localhost/wsc');
+define('SITE_URL', 'http://sip.pioteks.com/wsc');
 define('TOKEN_URL', 'http://139.196.72.117:8080/Wechat/check/token');
 define('appid', 'xxxx');
 define('appsecret','xxxx');
