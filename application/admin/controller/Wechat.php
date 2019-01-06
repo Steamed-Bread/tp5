@@ -9,7 +9,7 @@
 namespace app\admin\controller;
 use think\Controller;
 use think\Db;
-use app\admin\tools\Http;
+use app\admin\tools\JsApi;
 use app\admin\tools\Data;
 class Wechat extends Base
 {
@@ -31,8 +31,8 @@ class Wechat extends Base
             // echo $menu;
 
             //获取token请求
-            $accesstoken=Data::GetToken();
-            //echo $accesstoken;die;
+            $accesstoken=JsApi::gettoken();
+            echo $accesstoken;die;
 
             //获取deviceid和ticket请求
             $url_menu="https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$accesstoken;
